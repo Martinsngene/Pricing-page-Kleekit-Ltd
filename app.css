@@ -1,0 +1,850 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	font-family: Poppins, sans-serif;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow-x: hidden !important;
+}
+
+.logo-header img{
+	width: 5rem;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #fff;
+	box-shadow: 0px 1px 0px 0px rgba(229, 233, 242, 1);
+	position: relative;
+}
+
+.navLink-container{
+	display: flex;
+	width: 40%;
+	justify-content: space-around;
+}
+
+.navLink-container a{
+	text-decoration: none;
+	font-size: 12px;
+	color: rgba(17, 37, 85, 1);
+}
+
+.active{
+	font-weight: 700;
+	color: background: rgba(17, 37, 85, 1);
+}
+
+.navBtn-container{
+	display: flex;
+}
+
+.navBtn-container button{
+	margin-right: 1.2rem;
+}
+
+
+.book button{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+background: rgba(15, 130, 192, 1);
+color: #fff;
+font-size: 12px;
+border: none;
+border-radius: 0.3rem;
+margin-top: 10px;
+cursor: pointer;
+transition: 0.7s all;
+}
+
+.book button:hover{
+	color: rgba(15, 130, 192, 1);
+	background-color: #fff;
+	border: 1px solid #0F82C0;
+}
+
+.contain{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.img-resize{
+	width: 7rem;
+	height: 4rem;
+}
+
+.content{
+	margin: 1rem;
+	width: calc(100%/4);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.content p{
+
+	font-size: 0.7rem;
+	line-height: 17px;
+}
+
+.howItWorks{
+	padding: 2rem;
+}
+
+.top h2{
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+
+.bag{
+	width: 1.2rem;
+	margin-left: 1rem;
+}
+
+.chooseUs{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 5rem 2rem;
+	position: relative;
+
+}
+
+.chooseUs-inner{
+
+	display: flex;
+	justify-content: space-between;
+	font-size:  0.7rem;
+	z-index: 1000;
+}
+
+.chooseUs-inner img{
+	width: 2rem;
+}
+
+.inner-chooseUs{
+	width: 120px;
+	height: 75px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 1rem;
+	box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+	border-radius: 8px;
+	font-weight: bold;
+	z-index: 1000;
+	backdrop-filter: blur(10rem);
+	background-color: #fff;
+}
+
+.chooseUs-header{
+	margin-bottom: 2rem;
+	font-weight: bold;
+}
+
+.ellipse-2{
+	width: 300px;
+	height: 300px;
+	background-color: rgba(230, 237, 254, 1);
+	border-radius: 50%;
+	position: absolute;
+	top: 20px;
+	right: 50px;
+	z-index: -100;
+	opacity: 50%;
+}
+
+.ourCaring{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.headContent{
+	display: flex;
+	flex-direction: column;
+	height: 100px;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 3rem;
+}
+
+.headContent h2{
+	font-weight: 500;
+	line-height: 20px;
+}
+
+.explore{
+	margin-top: 2rem;
+	width: 20rem;
+	text-align: center;
+
+}
+
+.headContent p{
+	font-size: 0.7rem;
+}
+
+.plan-A{
+	background: rgba(17, 37, 85, 1);
+	color: #fff;
+	padding: 0.8rem 0.8rem;
+	border-top-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+}
+
+.plan-B{
+	background: rgba(188, 188, 188, 1);
+	color: #fff;
+	padding: 0.8rem 0.8rem;
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+}
+
+.easydoc{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 60%;
+	margin: 2rem 0rem;
+	background: #FFFFFF;
+   box-shadow: 0px 6px 40px rgba(0, 0, 0, 0.06);
+   padding: 2rem;
+   border-radius: 0.3rem;
+}
+
+	.payg-img{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 300px;
+	}
+
+.payg-img img{
+
+	width: 12rem;
+}
+
+.payg{
+	width: 300px;
+	line-height: 18px;
+}
+
+.payg li, p{
+	font-size: 0.7rem;
+}
+
+.payg p{
+	margin-bottom: 1.2rem;
+	margin-top: 1.2rem;
+}
+
+.payg li{
+
+	font-weight: 600;
+	line-height: 24px;
+}
+
+.payg h3{
+
+	font-weight: 600;
+}
+
+.payg button{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+background: rgba(15, 130, 192, 1);
+color: #fff;
+font-size: 0.5rem;
+border: none;
+border-radius: 0.3rem;
+margin-top: 10px;
+cursor: pointer;
+transition: 0.7s all;
+}
+
+.payg button:hover{
+	color: rgba(15, 130, 192, 1);
+	background-color: #fff;
+	border: 1px solid #0F82C0;
+}
+
+.capitation{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 3rem 0rem;
+}
+
+.capitation h2{
+
+	margin-bottom: 3rem;
+}
+
+.capitation-inner{
+	width: 34rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.capitation-inner li{
+
+	width: 115px;
+}
+
+.header-inner{
+
+	background: rgba(17, 37, 85, 1);
+	color: #fff;
+	font-size: 0.7rem;
+	padding: 1rem;
+	text-align: center;
+	border-top-right-radius: 0.3rem;
+	border-top-left-radius: 0.3rem;
+}
+
+.body-inner{
+	background: rgba(249, 248, 248, 1);
+	font-size: 0.6rem;
+	font-weight: 600;
+	padding: 1rem;
+	border-bottom-right-radius: 0.3rem;
+	border-bottom-left-radius: 0.3rem;
+	line-height: 20px;
+}
+
+.body-inner button{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+background: rgba(15, 130, 192, 1);
+color: #fff;
+font-size: 0.5rem;
+border: none;
+border-radius: 0.3rem;
+margin-top: 10px;
+width: 83px;
+cursor: pointer;
+transition: 0.7s all;
+}
+
+.body-inner button:hover{
+	color: rgba(15, 130, 192, 1);
+	background-color: #fff;
+	border: 1px solid #0F82C0;
+}
+
+.capitation-foot{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5rem;
+	position: relative;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.foot-container{
+	width: 520px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-bottom: 0.5rem;
+}
+
+.foot-1{
+	background: rgba(17, 37, 85, 1);
+	color: #fff;
+	padding: 0.7rem;
+	font-size: 0.6rem;
+	width: 140px;
+	margin-right: 0.1rem;
+	border-radius: 0.2rem;
+}
+
+.foot-2{
+	background: rgba(188, 188, 188, 1);
+	color: #fff;
+	padding: 0.7rem 1.3rem;
+	font-size: 0.6rem;
+	margin-right: 0.1rem;
+	width: 140px;
+	border-radius: 0.2rem;
+}
+
+.appoint{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(244, 243, 243, 1);
+	width: 400px;
+	height: 70px;
+}
+
+.ellipse-3{
+	width: 165px;
+	height: 165px;
+	background-color: rgba(230, 237, 254, 1);
+	border-radius: 50%;
+	position: absolute;
+	top: -15px;
+	left: 50px;
+	z-index: -100;
+	opacity: 50%;
+}
+
+.practitoner{
+	background: rgba(17, 37, 85, 1);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
+	padding: 3rem;
+}
+
+.practitoner p{
+	width: 30rem;
+	text-align: center;
+	line-height: 20px;
+}
+
+.practitoner h1{
+
+	line-height: 20px;
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+}
+
+.practitoner button{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+background: rgba(15, 130, 192, 1);
+color: #fff;
+font-size: 0.7rem;
+border: none;
+border-radius: 0.3rem;
+margin-top: 10px;
+cursor: pointer;
+transition: 0.7s all;
+}
+
+.practitoner button:hover{
+	color: rgba(15, 130, 192, 1);
+	background-color: #fff;
+	border: 1px solid #0F82C0;
+}
+
+footer{
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-items{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-size: 0.8rem;
+	width: 60rem;
+}
+
+.footer-item-1 li a{
+	line-height: 25px;
+	text-decoration: none;
+	color: #000;
+}
+
+.footer-item-2 li a{
+	line-height: 25px;
+	text-decoration: none;
+	color: #000;
+}
+
+.footer-item-3 li{
+	line-height: 25px;
+}
+
+/* Dropdown Menu */
+
+/* Style The Dropdown Button */
+.dropbtn {
+  padding: 0.4rem;
+  font-size: 0.7rem;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.7s all;
+  margin-right: 0.5rem;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 75px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.loginNav{
+	z-index: 1000;
+}
+
+.loginNav button{
+  padding: 0.4rem;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  transition: 0.7s all;
+  color: rgba(15, 130, 192, 1);
+  background: rgba(230, 246, 254, 1);
+
+}
+
+.loginNav button:hover{
+	background-color: rgba(15, 130, 192, 1);
+	color: rgba(230, 246, 254, 1);
+}
+
+.dropdown-content-login {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 75px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content-login a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  display: block;
+}
+
+.dropdown-content-login a:hover{
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content-login {
+  display: block;
+}
+
+.dropdown:hover .dropbtn-login {
+  background-color: rgba(15, 130, 192, 1);
+	color: rgba(230, 246, 254, 1);
+}
+
+/*Search Button*/
+
+#search-btn button{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0.4rem;
+background: rgba(15, 130, 192, 1);
+color: #fff;
+font-size: 0.7rem;
+border: none;
+border-radius: 0.3rem;
+cursor: pointer;
+transition: 0.7s all;
+width: 120px;
+}
+
+#search-btn button:hover{
+	color: rgba(15, 130, 192, 1);
+	background-color: #fff;
+	border: 1px solid #0F82C0;
+}
+
+.custom-btn{
+width: 120px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: rgba(220, 219, 219, 1);
+padding: 0.4rem;
+font-size: 0.7rem;
+border-radius: 0.2rem;
+display: flex;
+align-items: center;
+justify-content: center;
+border: none;
+cursor: pointer;
+transition: 0.7s all;
+margin-right: 0.5rem;
+}
+
+.custom-btn:hover{
+	background: rgba(220, 220, 219, 1);
+	color: #000;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 75px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/*Register Button*/
+
+.registerNav{
+	z-index: 1000;
+}
+
+.registerNav button{
+  padding: 0.4rem;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  transition: 0.7s all;
+  color: #fff;
+  background-color: rgba(15, 130, 192, 1);
+
+}
+
+.registerNav button:hover{
+	background-color: #fff;
+	color: rgba(15, 130, 192, 1);
+	border: 1px solid rgba(15, 130, 192, 1);
+}
+
+.dropdown-content-register {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 75px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content-register a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  display: block;
+}
+
+.dropdown-content-register a:hover{
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content-register {
+  display: block;
+}
+
+.dropdown:hover .dropbtn-register {
+  background-color: #fff;
+	color: rgba(15, 130, 192, 1);
+	border: 1px solid rgba(15, 130, 192, 1);
+}
+
+
+@media(max-width: 768px){
+
+	.responive{
+		display: none;
+	}
+
+	.howItWorks{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.contain{
+		flex-direction: column;
+	}
+
+	.subContainer{
+
+		flex-direction: column;
+	}
+
+	.chooseUs{
+		align-items: center;
+	}
+
+	.chooseUs-inner{
+		flex-direction: column;
+	}
+
+	.inner-chooseUs{
+		margin-bottom: 0.5rem;
+	}
+
+	.easydoc{
+
+		flex-direction: column;
+	}
+
+	.payg-img{
+		order: 1;
+	}
+
+	.payg{
+		order: 2;
+	}
+
+	.footer-items{
+		width: 60%;
+		margin: auto;
+		flex-direction: column;
+
+	}
+
+	.capitation-inner{
+		flex-direction: column;
+	}
+
+}
