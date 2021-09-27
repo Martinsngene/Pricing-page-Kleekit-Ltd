@@ -178,8 +178,8 @@ transition: 0.7s all;
 }
 
 .inner-chooseUs{
-	width: 120px;
-	height: 75px;
+	width: 160px;
+	height: 87px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -191,6 +191,8 @@ transition: 0.7s all;
 	z-index: 1000;
 	backdrop-filter: blur(10rem);
 	background-color: #fff;
+	line-height: 20px;
+	font-size: 0.9rem;
 }
 
 .chooseUs-header{
@@ -261,29 +263,30 @@ transition: 0.7s all;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	width: 60%;
+	width: 55%;
 	margin: 2rem 0rem;
 	background: #FFFFFF;
-   box-shadow: 0px 6px 40px rgba(0, 0, 0, 0.06);
-   padding: 2rem;
-   border-radius: 0.3rem;
+  box-shadow: 0px 6px 40px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  border-radius: 0.3rem;
+  height: 20rem;
 }
 
 	.payg-img{
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 300px;
+		width: 40%;
 	}
 
 .payg-img img{
 
-	width: 12rem;
+	width: 15rem;
 }
 
 .payg{
 	width: 300px;
-	line-height: 18px;
+	line-height: 22px;
 }
 
 .payg li, p{
@@ -302,7 +305,7 @@ transition: 0.7s all;
 }
 
 .payg h3{
-
+	line-height: 26px;
 	font-weight: 600;
 }
 
@@ -522,20 +525,27 @@ footer{
 }
 
 .footer-item-1 li a{
-	line-height: 25px;
+	line-height: 27px;
 	text-decoration: none;
 	color: #000;
 }
 
 .footer-item-2 li a{
-	line-height: 25px;
+	line-height: 27px;
 	text-decoration: none;
 	color: #000;
 }
 
 .footer-item-3 li{
-	line-height: 25px;
+	line-height: 27px;
 }
+
+#txt-center{
+	text-align: left;
+	width: 14rem;
+	line-height: 18px;
+}
+
 
 /* Dropdown Menu */
 
